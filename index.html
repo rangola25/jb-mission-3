@@ -4,10 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/app.js"></script>
+    <script defer src="assets/js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="p-3 mb-2 bg-dark text-white">
+    <form>
+        <h2 class="text-center mt-3">Search countries</h2>
+
+        <br>
+
+        <div class="d-flex justify-content-center mt-3">
+            <input class="form-control text-center" type="text" id="inputSearch" placeholder="Enter a key to find specific country or countries when you click on the button 'Search'">
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+         
+            <button class="btn btn-primary w-50 me-2" id="buttonSearch">Search</button>
+            <button class="btn btn-secondary w-50" id="buttonAll">All</button>
+        </div>
+        
+        <ul id="basicStats">
+            
+        </ul>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Country Name</th>
+                <th>Number of citizen</th>
+            </tr>
+        </thead>
+        <tbody id="numberOfCitizens">
+                
+        </tbody>
+    </table>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Number of countries</th>
+            </tr>
+        </thead>
+        <tbody id="region">
+                
+        </tbody>
+    </table>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Currencies</th>
+                <th>Number of countries</th>
+            </tr>
+        </thead>
+        <tbody id="currencies">
+                
+        </tbody>
+    </table>
+
+    <ul>
+        <li>When you click on the button 'All', All the names of the countries will appear in the table and all the counties stats</li>
+    </ul>
+
+    <ul id="basicStatsAll">
+            
+    </ul>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Countries</th>
+            </tr>
+        </thead>
+        <tbody id="allCountries">
+                
+        </tbody>
+    </table>
+</form>
 </body>
 </html>
